@@ -1,8 +1,4 @@
 # Google Play Store Analytics
-
-
-</div>
-
 ## Overview
 Comprehensive analysis of 10,841 Google Play Store apps exploring ratings, reviews, installs, categories, and pricing strategies. Delivered actionable insights for app developers and marketers to optimize app performance and user engagement.
 
@@ -15,26 +11,27 @@ Comprehensive analysis of 10,841 Google Play Store apps exploring ratings, revie
 - **Content Ratings**: Majority rated "Everyone" (8,714 apps), followed by Teen (1,146), Mature 17+ (447), and Everyone 10+ (376).
 - **Data Quality**: Contains missing values in ratings (1,474 nulls), some size and version fields marked as "Varies with device" requiring cleanup.
 
-## Analysis
-- **Exploratory Data Analysis (EDA)**:  
-  - Cleaned data by handling missing ratings, converting size from text to numeric MB values, extracting minimum Android version numbers, and transforming install ranges into average install counts.
-  - Analyzed category distribution finding GAME apps are largest in size (avg 40.8 MB) while TOOLS apps are smallest (9.3 MB), reflecting different functionality needs.
-  - Discovered free apps average 437K reviews versus paid apps with only 11.9K reviews, indicating massive engagement gap.
+## Analysis Performed
+
+- **Average Rating Analysis**: Calculated the overall average rating of apps in the dataset to understand general user satisfaction
+- **Category Distribution**: Identified and counted unique app categories to examine the diversity of applications on the Play Store
+- **App Size Distribution**: Analyzed the distribution of app sizes to understand storage requirements across applications
+- **Free vs Paid Apps**: Compared the count of free versus paid applications to assess monetization strategies
+- **Content Rating Distribution**: Examined the most common content ratings to understand target audience demographics
+- **Top Installed Apps**: Identified the top 5 most installed applications to determine popular apps on the platform
+- **High-Rated Apps Analysis**: Counted apps with ratings of 4.0 and above to assess overall quality standards
+- **Reviews by App Type**: Compared average number of reviews between free and paid apps to analyze user engagement patterns
+- **Category-wise Size Analysis**: Calculated average app size for each category to identify resource-intensive app types
+- **Update Frequency Patterns**: Analyzed app update timestamps to identify temporal trends and seasonal patterns in app maintenance
+- **Correlation Analysis**: Examined relationships between installs and ratings, price and ratings, and app size and installs to identify key success factors
+- **Genre Performance**: Evaluated genres with over 1 million installs and their average ratings to identify high-performing categories
+- **Content Rating Distribution**: Analyzed how content ratings differ between free and paid apps across different user segments
+- **Rating Trends by Installs**: Created binned analysis to understand how average ratings change with increasing install counts
 
 - **Visualizations**:  
   - Created bar charts showing category-wise ratings, with EDUCATION (4.37) and ART_AND_DESIGN (4.37) leading, while DATING (4.01) and MAPS_AND_NAVIGATION (4.06) lag behind.
   - Built install range analysis revealing higher install brackets correlate with better ratings, peaking at 4.37 for 50M-1B install apps.
   - Visualized top reviewed apps including Facebook (78M reviews), WhatsApp (69M reviews), and Instagram (66M reviews), all with 1 billion+ installs.
-
-- **Category Performance**:  
-  - GAME category dominates total installs with 31.5 billion, followed by COMMUNICATION (24.1B) and SOCIAL (12.5B), showing entertainment and connectivity drive adoption.
-  - Content rating analysis shows "Everyone" apps dominate both free (80.5%) and paid (86.5%) segments, indicating family-friendly content performs best commercially.
-  - Identified pricing sweet spots with most successful paid apps priced between $0.99-$4.99, balancing affordability and perceived value.
-
-- **Insights for Developers**:  
-  - Apps with perfect 5.0 ratings but minimal reviews (under 100) suggest niche success or limited exposure, highlighting growth opportunities.
-  - Regular updates correlate with higher ratings, with most top-rated apps updated in 2018, demonstrating importance of active maintenance.
-  - Free apps with in-app purchases generate significantly more engagement than paid apps, validating freemium business models in the Play Store ecosystem.
 
 ## How to Use
 
